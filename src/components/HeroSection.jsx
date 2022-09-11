@@ -4,10 +4,16 @@ import group4 from '../images/Group 4.png'
 import play from '../images/cil_media-play.png'
 import apple from '../images/foundation_social-apple.png'
 import review from '../images/review.png'
+import { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const HeroSection = () => {
+	useEffect(()=>{
+		AOS.init({duration: 2000})
+	})
 	return ( 
-		<section className="flex flex-col md:flex-row px-12 pb-8">
+		<section className="flex flex-col md:flex-row px-12 pb-8" data-aos="fade-right">
 			<div className="flex-1 ">
 				<h1 className="text-[51.29px] leading-[76.93px] text-white w-4/5">Mobile banking that <img src={group4} alt="group3-image" /> helps you manage finances<img src={group3} alt="group3-image" /> </h1>
 				<p className="text-body w-[90%] text-2xl leading-[150%]">Modern and secure service that allows you to manage account, make payments and transfer using your mobile device</p>
