@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root{
+  overflow-x: hidden;
+  background: #1A1A1A;
+}
+nav button{
+  background-color: #74FF5A;
+  box-shadow: 10px 11px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 11px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 11px 5px 0px rgba(0,0,0,0.75);
+}
+.text-body{
+  color: #CCCCCC;
+}
